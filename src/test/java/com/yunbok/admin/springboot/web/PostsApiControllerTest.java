@@ -84,8 +84,8 @@ public class PostsApiControllerTest {
 
 
         //then
-//        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
-//        assertThat(responseEntity.getBody()).isGreaterThan(0L);
+//      assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+//      assertThat(responseEntity.getBody()).isGreaterThan(0L);
 
         List<Posts> all = postsRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(title);
